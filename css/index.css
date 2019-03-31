@@ -1,0 +1,306 @@
+/*中间分类区域*/
+.grid {
+	height: 480px;
+}
+
+/*第一列*/
+.grid-col1 {
+	width: 190px;
+	height: 100%;
+	background-color: #FFFFFF;
+	color: #333333;
+	font-size: 15px;/*不是给字，是给反斜杠*/
+	border-top: 1px solid #EDEDED;
+	position: relative;
+}
+.ad {
+	width: 250px;
+	height: 480px;
+	background-color: pink;
+	position: absolute;
+	top: 0;
+	left: -250px;
+}
+.ad-r {
+	position: absolute;
+	top: 0;
+	left: 250px;
+	z-index: 999;
+	background-color: yellow;
+	height: 480px;
+	width: 0;
+	transition: all 0.5s;
+}
+.ad:hover .ad-r {
+	/*由0->990*/
+	width: 990px;
+}
+.grid-col1 a {
+	color: #333333;
+	font-size: 15px;/*给链接文字的*/
+	margin: 0 3px;
+}
+.grid-col1 a:hover {
+	color: #f10215;
+}
+.grid-col1 ul {
+	padding: 20px 0;
+}
+.grid-col1 ul li {
+	padding-left: 12px;
+	height: 25px;
+	line-height: 25px;
+	/*margin-left: 12px;注意与padding-left的区别*/
+}
+.grid-col1 ul li:hover {
+	background-color: #D9D9D9;
+}
+
+/*第二列*/
+.grid-col2 {
+	width: 790px;
+	height: 100%;
+	margin-left: 10px;
+}
+/*箭头部分*/
+.arrow-l,
+.arrow-r {
+	position: absolute;
+	top: 50%;
+	width: 30px;
+	height: 60px;
+	background: rgba(0,0,0,0.3);
+	text-align: center;
+	line-height: 60px;
+	color: #717171;
+	font-size: 20px;
+	font-weight: normal;
+	transform: translateY(-50%);
+}
+.arrow-r {
+	right: 0;
+}
+/*小圆点*/
+.circle {
+	width: 175px;
+	height: 20px;
+	background: rgba(255,255,255,0.3);
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 20px;
+	border-radius: 10px;
+}
+.circle li {
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	border-radius: 50%;
+	float: left;
+	margin: 4.5px;
+	cursor: pointer;
+}
+.circle .current {
+	background-color: #f10215;
+}
+.grid-col2-l {
+	margin-top: 10px;
+	position: relative;
+}
+.grid-col2-2 {
+	margin-top: 10px;
+}
+#grid-col2-2-2 {
+	margin: 10px 0;
+}
+
+/*第三列*/
+.grid-col3 {
+	width: 190px;
+	height: 100%;
+}
+/*右边模块*/
+.login {
+	height: 30%;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.login-t {
+	width: 132px;
+	font-size: 12px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #666;
+	padding-left: 32px;
+	padding-top: 58px;
+	line-height: 20px;
+	text-align: center;
+}
+.login-t img {
+	position: absolute;
+	top: -12px;
+	left: 63px;
+	background: rgba(255,255,255,0.6);
+	border-radius: 50%;
+}
+.login-b {
+	margin: 10px 15px;
+	text-align: center;
+	font-size: 12px;
+}
+.login-b a {
+	display: inline-block;
+	width: 77px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+}
+#login-b-a1 {
+	border-radius: 13px;
+	background: #fff;
+	color: #f10215;
+}
+#login-b-a1:hover {
+	background: red;
+	color: #fff;
+}
+#login-b-a2 {
+	border-radius: 13px;
+	background: #363634;
+	color: #E5D790;
+}
+#login-b-a2:hover {
+	background: red;
+	color: #fff;
+}
+.news {
+	height: 30%;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;
+	padding: 0 13px;
+}
+.news-t {
+	height: 23px;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.news-t a {
+	display: block;
+	float: left;
+	height: 16px;
+	line-height: 16px;
+	margin-top: 5px;
+}
+.news-t div{
+	height: 2px;
+	width: 28px;
+	background-color: #f10215;
+	position: absolute;
+	bottom: 0;
+	top: 22px;
+}
+.news-b {
+	padding-top: 10px;
+}
+.news-b li {
+	height: 23px;
+	line-height: 23px;
+}
+.cuxiao {
+	width: 38px;
+	border-right: 1px solid #ccc;
+}
+.gonggao {
+	margin-left: 15px;
+}
+.news-t .more {
+	float: right;
+}
+.expand {
+	height: 40%;
+	overflow: hidden;
+	background-color: #fff;
+}
+.expand-header {
+	padding: 10px 10px 0;
+	height: 24px;
+	text-align: center;
+	position: relative;
+}
+.expand-header li {
+	float: left;
+	width: 42px;
+}
+.expand-header div{
+	height: 2px;
+	width: 28px;
+	background-color: #f10215;
+	position: absolute;
+	top: 28px;
+	left: 17px;
+}
+.expand-content {
+	width: 190px;
+	padding: 0;
+	margin: 0;
+}
+.expand-content .charge-kind {
+	width: 190px;
+	height: 20px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+.charge-kind li {
+	float: left;
+	width: 63px;
+}
+.charge {
+	font-size: 12px;
+	color: #f10215;
+}
+.charge form {
+	margin-left: 10px;
+}
+input[type='text'] {
+	border: 1px solid #f10215;
+	margin-top: 5px;
+	height: 20px;
+}
+.charge dl {
+	margin-top: 3px;
+}
+.charge span {
+	display: block;
+	margin-top: 8px; 
+} 
+.charge a {
+	display: block;
+	background-color: red;
+	border-radius: 10px;
+	margin-left: 10px;
+	margin-top: 5px;
+	width: 62px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	color: #fff;
+}
+.cheap a {
+	display: block;
+	margin-left: 10px;
+	margin-top: 10px;
+	color: #5476DB;
+}
+dl dt {
+	float: left;
+	height: 20px;
+}
+dl select {
+	width: 133px;
+	height: 20px;
+	letter-spacing: 0;
+	border: 1px solid #f10215;
+	margin-left: 10px;
+}
